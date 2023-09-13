@@ -2,6 +2,10 @@
 
 A WordPress plugin that integrates with Google Calendar to display your availability directly on your website. It utilizes a shortcode to embed a calendar view into your WordPress site, allowing visitors to quickly see your availability based on your Google Calendar events.
 
+## Screenshots
+
+<img style="width:500px;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.07.38%20PM.png"><img style="width:500px;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.17.29%20PM.png">
+
 ## Features
 
 - **Calendar Shortcode Integration**: Easily embed a calendar view on any page or post using a shortcode.
@@ -14,11 +18,6 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 - **JavaScript**: For dynamic and interactive elements.
 - **PHP**: Backend development to integrate the plugin with WordPress.
 - **Google API**: Utilized to fetch dates and events based on your configured Google Calendar account.
-
-## Screenshots
-
-<img style="width:300px;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.07.38%20PM.png">
-<img style="width:300px;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.17.29%20PM.png">
 
 ## Installation
 

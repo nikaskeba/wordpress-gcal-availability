@@ -17,7 +17,8 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 
 ## Screenshots
 
-(Include a few screenshots demonstrating the plugin in action. You might show the calendar view, configuration settings, etc.)
+<img style="width:300px;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.07.38%20PM.png">
+<img style="width:300px;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.17.29%20PM.png">
 
 ## Installation
 

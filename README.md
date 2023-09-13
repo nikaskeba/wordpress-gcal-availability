@@ -36,6 +36,20 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 4. Configure the plugin settings with your Google API credentials and Google Calendar ID.
 5. Use the shortcode `[google_calendar_availability]` in your posts or pages to display the calendar.
 
+### Plugin Challenges
+
+#### Finding the best way to display availability
+Initially, the plugin was designed to display busy times from the Google Calendar. However, we realized that it would be more user-friendly to display the available time slots instead. To achieve this, we made the following adjustments:
+
+1. **24-hour String for Busy Dates**: We first converted the busy time slots fetched from Google Calendar into a 24-hour string format to facilitate easier processing.
+
+2. **User-Defined Time Blocks**: We introduced a feature that allows users to define their preferred time blocks for availability, providing more flexibility in displaying available slots.
+
+3. **Subtracting Busy Times to Display Availability**: We implemented a functionality where the busy time slots are subtracted from the user-defined time blocks, which then displays only the available time slots to the visitors.
+
+4. **12-hour Format for Availability Display**: To make the display more reader-friendly, the available time slots are then converted to a 12-hour format before being displayed on the website.
+
+
 ## Contributing
 
 Developed solely by Nicholas Skeba

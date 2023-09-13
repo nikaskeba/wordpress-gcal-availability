@@ -12,6 +12,7 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 - **Google Calendar Integration**: Fetches your availability data directly from your Google Calendar.
 - **Customizable Appearance**: Customize the appearance of the calendar to match your website's style.
 - **Responsive Design**: Ensures a seamless experience across various devices.
+- **Display**: Subtracts your scheduled events from the calendar and displays only the available times.
 
 ## Technology Stack
 

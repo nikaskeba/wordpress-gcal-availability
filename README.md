@@ -49,7 +49,6 @@ Initially, the plugin was designed to display busy times from the Google Calenda
 
 4. **12-hour Format for Availability Display**: To make the display more reader-friendly, the available time slots are then converted to a 12-hour format before being displayed on the website.
 
-
 ## Contributing
 
 Developed solely by Nicholas Skeba
@@ -61,3 +60,21 @@ Free to use but please credit me as the author
 ## Changelog
 
 V.1 Beta - Initial launch without caching.
+V.2 Time Fix - Fix 
+
+## Problem / Solutions
+
+### Issue 1: Incorrect Availability Times
+Initial Setting of Timezone: The initial step was to correctly set the timezone when fetching the free/busy information from the Google Calendar. This was done using the new DateTimeZone($timezone) function in PHP.
+
+Time Conversion Without Offset: Instead of directly modifying the time with an offset, we first converted the time to the selected timezone without adding an offset. This was to prevent an additional hour being added to the end time.
+
+Accurate Offset Calculation: After converting the time to the selected timezone, we correctly calculated the offset (if necessary) to modify the start and end times accurately. This prevented the one-hour discrepancy that was being observed initially.
+
+### Issue 2: Date String Not Updating
+Correct Date String Usage: We ensured that the date string was correctly updated in the jQuery function handling the date change. This allowed the date to update correctly when a new date was selected on the calendar, instead of retaining the initial page load date.
+
+Debugging and Verification: Throughout the process, we logged intermediate values during the conversion and date selection processes. This allowed us to verify that the values were being calculated and updated correctly.
+
+By implementing these solutions, we were able to fix the incorrect availability time calculations and the date string updating issue, thus ensuring that the availability times displayed were accurate and corresponded to the selected date and timezone.
+

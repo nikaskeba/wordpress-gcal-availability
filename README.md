@@ -83,7 +83,7 @@ Debugging and Verification: Throughout the process, we logged intermediate value
 
 By implementing these solutions, we were able to fix the incorrect availability time calculations and the date string updating issue, thus ensuring that the availability times displayed were accurate and corresponded to the selected date and timezone.
 
-### Issue 3
+### Issue 3: Fragmented timing
 The availability slots were displaying times that were very close to standard half-hour intervals (e.g., 9:31 AM or 11:59 AM), which might not be very convenient for setting appointments and could lead to fragmented schedules.
 
 Solution:

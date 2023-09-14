@@ -64,7 +64,8 @@ Free to use but please credit me as the author
 ## Changelog
 
 ###V.1 Beta - Initial launch without caching.
-###V.2 Time Fix - Issue 1, Issue 2
+
+###V.2 Time Fix - Issue 1, Issue 2.
 
 ## Problem / Solutions
 
@@ -81,4 +82,17 @@ Correct Date String Usage: We ensured that the date string was correctly updated
 Debugging and Verification: Throughout the process, we logged intermediate values during the conversion and date selection processes. This allowed us to verify that the values were being calculated and updated correctly.
 
 By implementing these solutions, we were able to fix the incorrect availability time calculations and the date string updating issue, thus ensuring that the availability times displayed were accurate and corresponded to the selected date and timezone.
+
+### Issue 3
+The availability slots were displaying times that were very close to standard half-hour intervals (e.g., 9:31 AM or 11:59 AM), which might not be very convenient for setting appointments and could lead to fragmented schedules.
+
+Solution:
+To make the schedule more uniform and appointments more manageable, we have introduced a feature that rounds the availability time slots to the nearest half-hour or hour. This means that times close to 30 minutes past the hour will be rounded to the half-hour mark, and times close to the hour will be rounded to the nearest hour.
+
+For instance:
+
+9:31 AM will be displayed as 9:30 AM
+11:59 AM will be displayed as 12:00 PM
+Implementation:
+We introduced a new function round_time_to_nearest_interval which takes the hour and minute as parameters and returns the rounded hour and minute. This function is called within the display_available_slot function to adjust the start and end times before displaying them.
 

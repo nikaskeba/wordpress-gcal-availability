@@ -6,6 +6,10 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 
 <img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.21.54%20PM.png"><img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.17.29%20PM.png">
 
+## Live Demo
+
+Hosted on my personal website - <a href="https://skeba.info/#Availability">Link</a>
+
 ## Features
 
 - **Calendar Shortcode Integration**: Easily embed a calendar view on any page or post using a shortcode.

@@ -59,8 +59,8 @@ Free to use but please credit me as the author
 
 ## Changelog
 
-V.1 Beta - Initial launch without caching.
-V.2 Time Fix - Fix 
+###V.1 Beta - Initial launch without caching.
+###V.2 Time Fix - Issue 1, Issue 2
 
 ## Problem / Solutions
 

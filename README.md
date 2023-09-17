@@ -76,6 +76,30 @@ Initially, the plugin was designed to display busy times from the Google Calenda
 
 4. **12-hour Format for Availability Display**: To make the display more reader-friendly, the available time slots are then converted to a 12-hour format before being displayed on the website.
 
+### Fetching Off-Hours Settings
+
+- **Problem**: The `off_hours_settings` variable was not getting the correct data.
+- **Solution**: Made sure to fetch the `off_hours_settings` from the WordPress database using the `get_option` function.
+
+### Date and Time Conversion
+
+- **Problem**: The date was getting converted to December 31, 1969, and the time was not correct in the .ics file.
+- **Solution**: Used proper date and time formatting and conversion to match the selected time zone.
+
+### Calendar Invite File Type
+
+- **Problem**: The .ics file sent had no file type and was not recognized as a calendar file.
+- **Solution**: Created a temporary .ics file with the correct headers and content type to ensure it is recognized as a calendar file.
+
+### Email Sending
+
+- **Problem**: Using headers caused errors and was not feasible to send multiple emails with different subjects.
+- **Solution**: Removed the headers and used the `wp_mail` function to send emails without headers, which allowed sending multiple emails with different subjects without any error.
+
+### WordPress Warning
+
+- **Problem**: Encountered a warning regarding the misuse of the `wpdb::prepare` function.
+- **Solution**: Ensured that all values passed to SQL queries are properly sanitized and prepared to prevent SQL injection and remove the warning.
 ## Contributing
 
 Developed solely by Nicholas Skeba

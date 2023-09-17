@@ -7,27 +7,28 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 <img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.21.54%20PM.png"><img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.17.29%20PM.png">
 
 ## Features
-** Google Calendar Integration
+**Google Calendar Integration**
 Integrate Google Calendar to display available and busy slots.
 Set up API Key and Calendar ID through the WordPress admin panel.
-Off-Hours Settings
 
-** Configure off-hours for each day of the week through the WordPress admin panel.
+**Off-Hours Settings**
+Configure off-hours for each day of the week through the WordPress admin panel.
 Option to add two different off-hours for each day.
 Facility to mark a day as "No Availability".
-Booking Form
 
-** Users can book an available slot through a frontend form.
-The form includes fields for name, email, message, date, time slot, and time zone.
-Booking Confirmation
+**Booking Form**
+Users can book an available slot through a frontend form.
+Theform includes fields for name, email, message, date, time slot, and time zone.
 
-** Sends a booking confirmation email to the admin with the details of the booking.
+**Booking Confirmation**
+Sends a booking confirmation email to the admin with the details of the booking.
 Sends a calendar invite (.ics file) to the user based on their input email.
 Customizable email body for users with booking details.
-Error Handling
 
-** Error handling for invalid time zone input.
+**Error Handling**
+Error handling for invalid time zone input.
 Proper feedback on API request failure.
+
 ## Live Demo
 
 Hosted on my personal website - <a href="https://skeba.info/book">Link</a>

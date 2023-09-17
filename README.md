@@ -1,4 +1,4 @@
-# WordPress Google Calendar Availability Plugin
+# WordPress Google Calendar Availability Plugin (Wordpress Calendly Like Tool)
 
 A WordPress plugin that integrates with Google Calendar to display your availability directly on your website. It utilizes a shortcode to embed a calendar view into your WordPress site, allowing visitors to quickly see your availability based on your Google Calendar events.
 

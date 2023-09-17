@@ -4,7 +4,7 @@ A WordPress plugin that integrates with Google Calendar to display your availabi
 
 ## Screenshots
 
-<img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.21.54%20PM.png"><img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screenshot%202023-09-13%20at%203.17.29%20PM.png">
+<img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screen%20Shot%202023-09-17%20at%201.02.32%20PM.png"><img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screen%20Shot%202023-09-17%20at%201.55.23%20PM.png"><img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screen%20Shot%202023-09-17%20at%201.56.35%20PM.png"><img style="width:500px;border-style:solid;border-width:2px;border-color:#000;" src="https://github.com/nikaskeba/wordpress-gcal-availability/blob/main/Screen%20Shot%202023-09-17%20at%201.56.50%20PM.png">
 
 ## Features
 **Google Calendar Integration**

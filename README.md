@@ -145,7 +145,7 @@ For instance:
 Implementation:
 We introduced a new function round_time_to_nearest_interval which takes the hour and minute as parameters and returns the rounded hour and minute. This function is called within the display_available_slot function to adjust the start and end times before displaying them.
 
-### Issue 4: ime Interval Selection
+### Issue 4: Time Interval Selection
 
 ### Description
 Allow users to select the time interval for appointment slots. Users can choose intervals of 15, 30, 45, or 60 minutes, with the default set to 30 minutes. When the time interval is changed, the available time slots update immediately to reflect the new interval.

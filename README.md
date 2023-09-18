@@ -40,7 +40,8 @@ Hosted on my personal website - <a href="https://skeba.info/book">Link</a>
 - **Customizable Appearance**: Customize the appearance of the calendar to match your website's style.
 - **Responsive Design**: Ensures a seamless experience across various devices.
 - **Display**: Subtracts your scheduled events from the calendar and displays only the available times.
-
+- **Interval Selection**: User can select 15 min, 30 min, 45 min, or 1 hour time slots.
+- 
 ## Technology Stack
 
 - **JavaScript**: For dynamic and interactive elements.
@@ -114,6 +115,7 @@ Free to use but please credit me as the author
 
 ###V.2 Time Fix - Issue 1, Issue 2.
 
+###V.3 Add interval
 ## Problem / Solutions
 
 ### Issue 1: Incorrect Availability Times
@@ -142,4 +144,29 @@ For instance:
 11:59 AM will be displayed as 12:00 PM
 Implementation:
 We introduced a new function round_time_to_nearest_interval which takes the hour and minute as parameters and returns the rounded hour and minute. This function is called within the display_available_slot function to adjust the start and end times before displaying them.
+
+### Issue 4: ime Interval Selection
+
+### Description
+Allow users to select the time interval for appointment slots. Users can choose intervals of 15, 30, 45, or 60 minutes, with the default set to 30 minutes. When the time interval is changed, the available time slots update immediately to reflect the new interval.
+
+***Implementation***
+To implement this feature, we added a new dropdown selector to the UI where users can choose their desired time interval. We also updated the `fetchAvailability` function to accept a new parameter, `timeInterval`, which determines the length of the time slots.
+
+Here's a snippet of the new JavaScript code added to handle the time interval change:
+
+```javascript
+// Define a variable to hold the selected time interval, defaulting to 30 minutes
+let timeInterval = 30;
+
+// Add a change event handler to the time interval selector
+$('#time-interval-selector').change(function() {
+    timeInterval = parseInt($(this).val());
+    console.log("Time interval changed to:", timeInterval, "minutes");
+
+    // Call fetchAvailability here to update the time slots immediately 
+    // when the time interval is changed.
+    fetchAvailability(selectedDate, selectedTimezone);
+});
+
 

@@ -41,7 +41,7 @@ Hosted on my personal website - <a href="https://skeba.info/book">Link</a>
 - **Responsive Design**: Ensures a seamless experience across various devices.
 - **Display**: Subtracts your scheduled events from the calendar and displays only the available times.
 - **Interval Selection**: User can select 15 min, 30 min, 45 min, or 1 hour time slots.
-- 
+  
 ## Technology Stack
 
 - **JavaScript**: For dynamic and interactive elements.
